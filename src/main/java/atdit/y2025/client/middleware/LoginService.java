@@ -35,6 +35,10 @@ public class LoginService {
     logger.trace( "user: {}", user );
     logger.trace( "password: {}", password );
 
+    if( user == null || password == null || user.isEmpty( ) || password.isEmpty( ) ) {
+      throw new LoginFailedException( );
+    }
+
     var response = callLoginService( user, password );
     logger.trace( "Response Code {}", response.responseCode( ) );
     logger.trace( "Response Message {}", response.message( ) );
