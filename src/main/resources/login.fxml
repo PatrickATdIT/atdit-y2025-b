@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:controller="atdit.y2025.client.ui.LoginController" maxHeight="-Infinity" maxWidth="-Infinity"
+      minHeight="-Infinity" minWidth="-Infinity" prefHeight="149.0" prefWidth="298.0"
+      xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1">
+   <Button layoutX="222.0" layoutY="101.0" mnemonicParsing="false" onAction="#clickOnLogin" text="Login"/>
+   <PasswordField fx:id="passwordTextField" layoutX="119.0" layoutY="67.0"/>
+   <TextField fx:id="userTextField" layoutX="119.0" layoutY="33.0"/>
+   <Label layoutX="35.0" layoutY="37.0" text="Username"/>
+   <Label layoutX="37.0" layoutY="71.0" text="Password"/>
+</Pane>
